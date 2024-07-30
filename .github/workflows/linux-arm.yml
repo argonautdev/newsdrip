@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: warp-custom-build-arm64
+    runs-on: warp-ubuntu-latest-arm64-2x
     steps:
     - name: Configure Cloudflare DNS
       run: echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" | tee /etc/resolv.conf
